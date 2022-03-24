@@ -1,7 +1,7 @@
 <?php
  $bdhost = 'localhost';
- $bdusername = 'USER';
- $bdpassword = 'PASSWORD';
+ $bdusername = 'root';
+ $bdpassword = '12345';
  $bdname = 'Shop';
  /* Соединяемся с СУБД MariaDB и выбираем базу данных */
  $mysqli = new mysqli($bdhost, $bdusername, $bdpassword, $bdname);

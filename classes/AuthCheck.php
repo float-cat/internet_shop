@@ -18,9 +18,9 @@ class AuthCheck
         $password = $mysqli->real_escape_string($password);
         /* Запрашиваем айди и группу из БД */
         $result = $mysqli->query(
-            'SELECT userid, usergroup FROM Users
-            WHERE userlogin = \'' . $login .
-            '\' AND userpassword = \'' . 
+            'SELECT id, grouptype FROM Users
+            WHERE login = \'' . $login .
+            '\' AND password = \'' . 
             $password .'\'');
         if(!$result)
             echo 'Проблема с аутентификацией!';

@@ -5,6 +5,8 @@
  ini_set('display_startup_errors', 1);
  /* Соединяемся с базой данных */
  include 'modules/connectdb.php';
+ /* Аутентификация */
+ include 'handlers/auth.php';
 ?>
 
 <html>
@@ -21,13 +23,13 @@
     </td>
     <td id="Header">
      <img src="images/logo-title.png" />
+     <br />
+     <?php include 'modules/login.php'; ?>
     </td>
    </tr>
    <tr>
     <td id="LeftMenu">
      Левое меню
-     <br />
-     <?php echo md5('adminpass'); ?>
     </td>
     <td id="Content">
      Контент
