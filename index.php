@@ -32,7 +32,11 @@
      Левое меню
     </td>
     <td id="Content">
-     Контент
+     <?php
+      if(isset($_GET['register']))
+          include 'pages/registration.php';
+      echo md5('1234567890');
+     ?>
     </td>
    </tr>
    <tr>
