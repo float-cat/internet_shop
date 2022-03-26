@@ -35,7 +35,10 @@
      <?php
       if(isset($_GET['register']))
           include 'pages/registration.php';
-      echo md5('1234567890');
+      else if(isset($_GET['catalog']))
+          include 'pages/catalog.php';
+      else if(isset($_GET['productid']))
+          include 'pages/product.php';
      ?>
     </td>
    </tr>
