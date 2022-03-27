@@ -26,7 +26,7 @@ class Catalog
                 ON Products.categoryid = Categoryes.id
             JOIN Producers
                 ON Products.producerid = Producers.id
-            LIMIT 5 OFFSET ' . $offset . '
+            LIMIT 20 OFFSET ' . $offset . '
         ');
         if(!$result)
         {

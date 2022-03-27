@@ -12,6 +12,8 @@
      <br />
      -<?php echo $product['discount']; ?>%
      <br />
+     <?php echo $product['description']; ?>
+     <br />
      <a href="?catalog&categoryid=<?php echo $product['categoryid']; ?>">
       <?php echo $product['categorycaption']; ?>
      </a>
