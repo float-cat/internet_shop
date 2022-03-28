@@ -14,6 +14,7 @@ class Catalog
 
     public function loadProducts($offset)
     {
+        $this->products = [];
         global $mysqli;
         $offset = $mysqli->real_escape_string($offset);
         $result = $mysqli->query('

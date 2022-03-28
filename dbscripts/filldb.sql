@@ -119,3 +119,108 @@ VALUES ('Гектор 34', 3000, 5, 'Отличный шкаф для хране
 INSERT INTO Products (caption, price, discount, description, display,
  categoryid, producerid)
 VALUES ('Гектор 35', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 36', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 37', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 38', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 39', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 40', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 41', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 42', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 43', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 44', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 45', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 46', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 47', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 48', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 49', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 50', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 51', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 52', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 53', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 54', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 55', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 56', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 57', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 58', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 59', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 60', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 61', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 62', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 63', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 64', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 65', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 66', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 67', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 68', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 69', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);
+INSERT INTO Products (caption, price, discount, description, display,
+ categoryid, producerid)
+VALUES ('Гектор 70', 3000, 5, 'Отличный шкаф для хранения вещей',  TRUE, 1, 1);

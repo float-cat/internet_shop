@@ -1,6 +1,10 @@
+<script type="text/javascript" src="js/catalog.js"></script>
 <?php
     include 'classes/Catalog.php';
     $catalog = new Catalog();
+?>
+ <div id="Catalog">
+<?php
     foreach($catalog->getProducts() as $product)
     {
 ?>
@@ -24,3 +28,6 @@
 <?php
     }
 ?>
+ </div>
+<input type="button" value="TestAJAX" onclick="catalog.loadProducts();">
+</input>
