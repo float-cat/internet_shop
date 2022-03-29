@@ -3,6 +3,7 @@
 <?php
     include 'classes/Catalog.php';
     $catalog = new Catalog();
+    $catalog->loadProducts(0);
 ?>
  <div id="Catalog">
 <?php

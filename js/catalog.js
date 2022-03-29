@@ -9,8 +9,9 @@ catalog = {
     {
         let elem = window;
         elem.addEventListener('scroll', function() {
-            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
-            if (windowRelativeBottom < document.documentElement.clientHeight + 100)
+            let windowRelativeBottom =
+                document.documentElement.getBoundingClientRect().bottom;
+            if (windowRelativeBottom < document.documentElement.clientHeight + 50)
             {
                 catalog.loadProducts();
             }
@@ -42,13 +43,11 @@ catalog = {
              ' + product['producercaption'] + '\
             </a> \
             </div>';
-        catalog.lastProductid = parseInt(product['id']);
     },
 
     async addProducts(products)
     {
         let teststring = '';
-        catalog.lastProductid += 20;
         products.forEach(function(entry) {
             catalog.setProduct(entry);
         });
@@ -58,6 +57,13 @@ catalog = {
     {
         let formData = new FormData();
         formData.append('lastProductid', catalog.lastProductid);
+        let url = (new URL(document.location)).searchParams;
+        if (url.get('sort'))
+            formData.append('sort', url.get('sort'));
+        if (url.get('str'))
+            formData.append('str', url.get('str'));
+
+        catalog.lastProductid += 20;
 
         /* Выполняем POST-запрос */
         let response = await fetch('handlers/catalog.php', {
