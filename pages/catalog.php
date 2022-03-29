@@ -1,4 +1,5 @@
 <script type="text/javascript" src="js/catalog.js"></script>
+<link rel="stylesheet" type="text/css" href="css/catalog.css" />
 <?php
     include 'classes/Catalog.php';
     $catalog = new Catalog();
@@ -8,7 +9,7 @@
     foreach($catalog->getProducts() as $product)
     {
 ?>
-    <div style="float: left;">
+    <div class="Product">
      <a href="?productid=<?php echo $product['id']; ?>">
       <?php echo $product['caption']; ?>
      </a>
@@ -29,5 +30,3 @@
     }
 ?>
  </div>
-<input type="button" value="TestAJAX" onclick="catalog.loadProducts();">
-</input>

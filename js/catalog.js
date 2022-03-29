@@ -5,6 +5,18 @@
 catalog = {
     lastProductid: 20,
 
+    async loadByScroll()
+    {
+        let elem = window;
+        elem.addEventListener('scroll', function() {
+            let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+            if (windowRelativeBottom < document.documentElement.clientHeight + 100)
+            {
+                catalog.loadProducts();
+            }
+        })
+    },
+
     async setProduct(product)
     {
         output = document.getElementById('Catalog');
@@ -13,7 +25,7 @@ catalog = {
         newDiv.id = 'product' + product['id'];
         output.append(newDiv);
         /* Обновляем карточку товара */
-        newDiv.innerHTML = '<div style="float: left;"> \
+        newDiv.innerHTML = '<div class="Product"> \
             <a href="?productid=' + product['id'] + '"> \
              ' + product['caption'] + '\
             </a> \
@@ -60,3 +72,8 @@ catalog = {
         catalog.addProducts(result);
     }
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    catalog.loadByScroll();
+});
