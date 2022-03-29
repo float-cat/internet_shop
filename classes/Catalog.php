@@ -17,6 +17,33 @@ class Catalog
         $this->products = [];
         global $mysqli;
         $offset = $mysqli->real_escape_string($offset);
+        $queryparam = '';
+        if(isset($_GET['sort']))
+        {
+            $queryparam = ' ORDER BY ';
+            if($_GET['sort'] == 'price_asc')
+                $queryparam .= 'Products.price ASC ';
+            else if($_GET['sort'] == 'price_desc')
+                $queryparam .= 'Products.price DESC ';
+            else if($_GET['sort'] == 'discount')
+                $queryparam .= 'Products.discount DESC ';
+            else if($_GET['sort'] == 'asc')
+                $queryparam .= 'Products.caption ASC ';
+            else if($_GET['sort'] == 'desc')
+                $queryparam .= 'Products.caption DESC ';
+        }
+        echo '
+            SELECT Products.id, Products.caption, Products.price,
+            Products.discount, Products.description, Products.display,
+            Products.categoryid, Categoryes.caption,
+            Products.producerid, Producers.caption
+            FROM Products
+            JOIN Categoryes
+                ON Products.categoryid = Categoryes.id
+            JOIN Producers
+                ON Products.producerid = Producers.id' . $queryparam . '
+            LIMIT 20 OFFSET ' . $offset . '
+        ';
         $result = $mysqli->query('
             SELECT Products.id, Products.caption, Products.price,
             Products.discount, Products.description, Products.display,
@@ -26,7 +53,7 @@ class Catalog
             JOIN Categoryes
                 ON Products.categoryid = Categoryes.id
             JOIN Producers
-                ON Products.producerid = Producers.id
+                ON Products.producerid = Producers.id' . $queryparam . '
             LIMIT 20 OFFSET ' . $offset . '
         ');
         if(!$result)
