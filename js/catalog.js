@@ -3,79 +3,19 @@
 */
 
 catalog = {
-    lastProductid: 20,
 
     async loadByScroll()
     {
         let elem = window;
+        let scrollBtn = document.getElementById('nextBtn');
         elem.addEventListener('scroll', function() {
             let windowRelativeBottom =
                 document.documentElement.getBoundingClientRect().bottom;
             if (windowRelativeBottom < document.documentElement.clientHeight + 50)
             {
-                catalog.loadProducts();
+                scrollBtn.click();
             }
         })
-    },
-
-    async setProduct(product)
-    {
-        output = document.getElementById('Catalog');
-
-        newDiv = document.createElement('div');
-        newDiv.id = 'product' + product['id'];
-        output.append(newDiv);
-        /* Обновляем карточку товара */
-        newDiv.innerHTML = '<div class="Product"> \
-            <a href="?productid=' + product['id'] + '"> \
-             ' + product['caption'] + '\
-            </a> \
-            <br /> \
-            ' + product['price'] + '\
-            <br /> \
-            -' + product['discount'] + '% \
-            <br /> \
-            <a href="?catalog&categoryid=' + product['categoryid'] + '"> \
-             ' + product['categorycaption'] + ' \
-            </a> \
-            <br /> \
-            <a href="?catalog&producerid=' + product['producerid'] + '"> \
-             ' + product['producercaption'] + '\
-            </a> \
-            </div>';
-    },
-
-    async addProducts(products)
-    {
-        let teststring = '';
-        products.forEach(function(entry) {
-            catalog.setProduct(entry);
-        });
-    },
-
-    async loadProducts()
-    {
-        let formData = new FormData();
-        formData.append('lastProductid', catalog.lastProductid);
-        let url = (new URL(document.location)).searchParams;
-        if (url.get('sort'))
-            formData.append('sort', url.get('sort'));
-        if (url.get('str'))
-            formData.append('str', url.get('str'));
-
-        catalog.lastProductid += 20;
-
-        /* Выполняем POST-запрос */
-        let response = await fetch('handlers/catalog.php', {
-            method: 'POST',
-            body: formData
-        });
-
-        /* Получаем результат */
-        let result = await response.json();
-
-        /* Ставим полученные товары */
-        catalog.addProducts(result);
     }
 };
 
